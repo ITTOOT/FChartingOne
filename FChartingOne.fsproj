@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Types\FromCSharp.fs" />
+    <Compile Include="Utilities\StatusUtil.fs" />
+    <Compile Include="Charting\SoMCharts.fs" />
+    <None Include="Charting\PCharts.fsx" />
+    <None Include="Charting\XCharts.fsx" />
+    <Compile Include="Charting\ChartingBasics.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Data" Version="5.0.2" />
+    <PackageReference Include="FSharp.Stats" Version="0.4.9" />
+    <PackageReference Include="Plotly.NET" Version="3.0.1" />
+    <PackageReference Include="Plotly.NET.ImageExport" Version="3.0.0" />
+    <PackageReference Include="Plotly.NET.Interactive" Version="3.0.2" />
+  </ItemGroup>
+
+</Project>
